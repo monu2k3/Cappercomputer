@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capper Computer Institute</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Capper Computer Institute</h1>
+        <p>Basic Computer, Advanced Excel, Tally ERP9, Graphic Design, MARG Course, Video Editing</p>
+        <p><strong>Address:</strong> H.NO. 327, Chaudhary Complex First Floor, Main Road, Shalimar Bagh Village, Delhi-110088</p>
+        <p><strong>Contact:</strong> 8860049271, 7678143275</p>
+    </header>
+
+    <div class="container">
+        <div class="form-header">
+            <h2>Student Registration Form</h2>
+        </div>
+
+        <div class="student-form">
+            <div class="form-group">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" placeholder="Enter Student's Name">
+            </div>
+
+            <div class="form-group">
+                <label for="studentEmail">Email</label>
+                <input type="email" id="studentEmail" placeholder="Enter Student's Email">
+            </div>
+
+            <div class="form-group">
+                <label for="studentPhone">Phone Number</label>
+                <input type="tel" id="studentPhone" placeholder="Enter Student's Phone Number">
+            </div>
+
+            <div class="form-group">
+                <label for="studentCourse">Course</label>
+                <select id="studentCourse">
+                    <option value="Basic Computer">Basic Computer</option>
+                    <option value="Advanced Excel">Advanced Excel</option>
+                    <option value="Tally ERP9">Tally ERP9</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="MARG Course">MARG Course</option>
+                    <option value="Video Editing">Video Editing</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="courseDuration">Course Duration</label>
+                <input type="text" id="courseDuration" placeholder="Enter Course Duration (e.g., 2 Months)">
+            </div>
+
+            <div class="form-group">
+                <label for="courseFee">Course Fee</label>
+                <input type="number" id="courseFee" placeholder="Enter Course Fee">
+            </div>
+
+            <div class="form-group">
+                <label for="studentAddress">Address</label>
+                <input type="text" id="studentAddress" placeholder="Enter Student's Address">
+            </div>
+
+            <div class="form-group">
+                <label for="studentFee">Fee Status</label>
+                <select id="studentFee">
+                    <option value="Paid">Paid</option>
+                    <option value="Unpaid">Unpaid</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="studentPhoto">Upload Photo</label>
+                <input type="file" id="studentPhoto">
+            </div>
+
+            <button type="button" onclick="addStudentDetails()">Register Student</button>
+        </div>
+    </div>
+
+    <div class="container student-list">
+        <h2>Registered Students</h2>
+        <div id="studentList"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
